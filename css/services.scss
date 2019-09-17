@@ -1,0 +1,43 @@
+
+table{
+	text-align: center;
+	border: 1px solid grey;
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	overflow-x: auto;
+	
+	th{
+		text-align: center;
+		background-color: azure;
+	}
+	tr{
+		height: 40px; 
+		border: 1px solid;
+		background-color: beige;
+	}
+}
+
+%message{
+	font-family: serif;
+	font-size: 16px;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid grey;
+	font-weight: bold;
+	width: 450px;
+	text-align: center;
+	
+}
+.first {
+	@extend %message;
+	background-color: beige;
+}
+.second {
+	@extend %message;
+	background-color:cornsilk;
+}
+.third {
+	@extend %message;
+	background-color:aliceblue;
+}
